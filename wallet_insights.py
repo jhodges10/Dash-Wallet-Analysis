@@ -49,8 +49,8 @@ def fetch_wallet(address):
     response = requests.request("GET", url_selected)
 
     try:
-        transaction_list = json.loads(response.text)['transactions']  # Temporarily disabled for GetFreeDash
-        # transaction_list = json.loads(response.text)
+        #transaction_list = json.loads(response.text)['transactions']  # Temporarily disabled for GetFreeDash
+        transaction_list = json.loads(response.text)
         # print(transaction_list)
         return transaction_list
 

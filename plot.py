@@ -80,8 +80,9 @@ def total_given_away(analysis_data):
     return sum
 
 
-# analysis_data = load_json()
-analysis_data = load_csv()
-prepared_data = convert_json(analysis_data)
-# total_given_away(analysis_data)
-graph_data(prepared_data)
+if __name__ == '__main__':
+    # analysis_data = load_json()
+    analysis_data = load_csv()
+    prepared_data = convert_json(analysis_data)
+    # total_given_away(analysis_data)
+    graph_data(prepared_data)

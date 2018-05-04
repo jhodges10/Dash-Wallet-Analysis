@@ -3,7 +3,7 @@ import random
 import requests
 import json
 from json import JSONDecodeError
-from dash_modules import wallet_insights
+import wallet_insights
 
 from multiprocessing import Pool
 from functools import partial
